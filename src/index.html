@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-4.10</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        #game-button {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>1 Завдання</h1>
+
+    <button onclick="startMessages()">Запустити таймер</button>
+    <p id="messages"></p>
+
+
+    <h2>2 Завдання</h1>
+
+    <div class="box" id="box"></div>
+
+    <button onclick="startAnimation()">Запустити анімацію</button>
+
+
+    <h2>3 Завдання</h1>
+
+    <p>Час: <span id="time">10</span></p>
+    <p>Очки: <span id="score">0</span></p>
+    <p>Натискань: <span id="clicks">0</span></p>
+
+    <button id="game-button">Натисни!</button>
+    <br><br>
+    <button onclick="startGame()">Почати гру</button>
+
+
+    <h2>4 Завдання</h1>
+
+    <input type="number" id="seconds" placeholder="Введіть секунди">
+    <button onclick="startTimer()">Запустити</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
